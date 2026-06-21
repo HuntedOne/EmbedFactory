@@ -1,0 +1,15 @@
+# EmbedFactory security allowlist — TEMPLATE.
+# Copy this to  harness/allowed-roots  (that real file is gitignored and machine-specific).
+# It is the trust anchor for the whole harness: anything NOT listed here is treated as an
+# injection attempt by guard.sh and the sentinel.
+#
+# Two kinds of lines:
+#   1. Absolute paths   = trusted PROJECT ROOTS. The active project must live under one of these.
+#   2. remote:<prefix>  = trusted git remote URL PREFIXES. Clones / remotes must match one.
+#
+# Keep this list as TIGHT as possible. Examples (replace with your own — nothing here is baked
+# into the committed harness):
+#
+# /Users/you/Documents/EmbeddedProjects
+# remote:https://github.com/your-org/
+# remote:git@github.com:your-org/

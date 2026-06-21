@@ -1,0 +1,27 @@
+# Environment & secrets (never commit)
+.env
+.venv/
+
+# Machine-specific security config & runtime state (never commit)
+harness/target
+harness/allowed-roots
+harness/audit.log
+
+# Per-project artifacts (kept locally)
+harness/baseline/*
+!harness/baseline/.gitkeep
+harness/reports/*
+!harness/reports/.gitkeep
+harness/logs/*
+!harness/logs/.gitkeep
+
+# Repos cloned from trusted remotes for review/build
+projects/
+
+# Third-party vendor reference material stays LOCAL — not redistributed in a public repo.
+# (ST/Arduino manuals, datasheets, walkthroughs, CAD.) The mentor reads them from disk.
+docs/reference/
+docs/project/
+
+# OS / editor noise
+.DS_Store

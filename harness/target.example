@@ -1,0 +1,5 @@
+# Copy to  harness/target  with the absolute path of the active embedded project, e.g.:
+#   /Users/you/Documents/MyStm32Project
+#
+# Better: run  ./embed.sh setup /path/to/project  — it validates the path against
+# harness/allowed-roots, records a baseline, and runs a first security scan.
