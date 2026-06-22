@@ -15,6 +15,10 @@ harness/reports/*
 harness/logs/*
 !harness/logs/.gitkeep
 
+# community-refresh runtime state (transient staging holds a copy of .env during a run; review log)
+harness/staging/
+harness/community-refresh-history.log
+
 # Repos cloned from trusted remotes for review/build
 projects/
 
